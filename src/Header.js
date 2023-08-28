@@ -8,16 +8,17 @@ const Header = () => {
         <>
         <Top>
             <Left>
-                <Home to="/"><Image src={LogoImage}/></Home>
+                {/* <Home to="/"><Image src={LogoImage}/></Home> */}
             </Left>
             <Middle>
+            <Home to="/"><Image src={LogoImage}/></Home>
                 <Home to="/">
                 <Title>Studio Wick</Title> 
                 </Home>   
             </Middle>
-            <Right>
+            {/* <Right>
                 <BookNow>Book Now</BookNow>
-            </Right>
+            </Right> */}
         </Top>
         <Bottom>
             <Categories>Home</Categories>
@@ -42,14 +43,14 @@ width: 100%;
 `
 
 const Left = styled.div`
-width:33%;
+
 display: flex;
 justify-content: center;
 
 `
 
 const Middle = styled.div`
-width: 33%;
+width: 100%;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -82,6 +83,7 @@ const Categories = styled(Link)`
 `
 
 const Home = styled(Link)`
+margin: 1rem;
 height: 5rem;
 text-decoration: none;
 color:white;
