@@ -8,25 +8,18 @@ const Header = () => {
         <>
         <Top>
             <Left>
-                {/* <Home to="/"><Image src={LogoImage}/></Home> */}
-            </Left>
-            <Middle>
             <Home to="/"><Image src={LogoImage}/></Home>
                 <Home to="/">
                 <Title>Studio Wick</Title> 
                 </Home>   
-            </Middle>
-            {/* <Right>
-                <BookNow>Book Now</BookNow>
-            </Right> */}
+            </Left>
+            <Right>
+                <Categories>Services</Categories>
+                <Categories to="/about">About</Categories>
+                <Categories>Contact</Categories>
+                <BookNow href="https://www.fresha.com/a/studio-wick-montreal-montreal-1165-rue-ottawa-iga8musl/booking?menu=true" target="_blank">Book Now</BookNow>
+            </Right>
         </Top>
-        <Bottom>
-            <Categories>Home</Categories>
-            <Categories>About</Categories>
-            <Categories>Philosophy</Categories>
-            <Categories>Services</Categories>
-            <Categories>Contact</Categories>
-        </Bottom>
         </>
     )
 }
@@ -36,64 +29,53 @@ export default Header
 
 const Top = styled.div`
 display: flex;
-
-background-color: black;
+background-color: #212e1a;
 justify-content: space-evenly;
 width: 100%;
+height: 6rem;
 `
 
 const Left = styled.div`
-
+width: 50%;
 display: flex;
-justify-content: center;
-
-`
-
-const Middle = styled.div`
-width: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
+justify-content: left;
 color:white;
 font-size: 2rem;
 `
 
+const Image = styled.img`
+max-width: 4rem;
+`
+
+
 const Right = styled.div`
-width: 33%;
+width: 50%;
 display: flex;
-justify-content: center;
+justify-content: right;
 align-items: center;
 color:white;
-
+margin-right: 0.5rem;
 `
-
-const Bottom = styled.div`
-    display: flex;
-    justify-content: center;
-    padding: 1rem 0;
-    border-bottom: solid black 0.1rem;
-`
-
 
 
 const Categories = styled(Link)`
     margin: 0 1rem;
     text-decoration: none;
-    color: black;
+    color: white;
+    font-size: 1.5rem;
 `
 
 const Home = styled(Link)`
-margin: 1rem;
+margin: 0.5rem 0 0.5rem 1.5rem;
 height: 5rem;
 text-decoration: none;
 color:white;
+display: flex;
+align-items: center;
+justify-content: center;
 `
 
-const Image = styled.img`
-max-width: 5rem;
-`
-
-const BookNow = styled(Link)`
+const BookNow = styled.a`
 display: flex;
 justify-content: center;
 text-decoration: none;

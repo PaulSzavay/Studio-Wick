@@ -1,24 +1,16 @@
 import { styled } from "styled-components";
 import Placeholder from "./Assets/Placeholder.jpg"
 import Shampoo from "./Assets/istockphoto-1356587396-612x612.jpg"
-import Footer from "./Footer";
+
+import LandingPage from "./LandingPage";
 
 const Homepage = () => {
 
     return(
         <>
-        <CoverImageDiv>
-            <Book>
-                <BookImage src={Placeholder}/>
-                <BookButton>Book Now</BookButton>
-            </Book>
-            <Shop>
-                <ShopImage src={Shampoo}/>
-                <ShopButton>Shop</ShopButton>
-            </Shop>
-        </CoverImageDiv>
+        <LandingPage/>
 
-        <Footer/>
+
         </>
     )
 }
@@ -30,7 +22,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 height: 75vh;
-width: 100vw;
+width: 175vw;
 
 `
 
