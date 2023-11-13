@@ -20,7 +20,7 @@ const Footer = () => {
             </Contact>
             <Hours>
                 <h3>Follow Us</h3>
-                <InstaLink><AiFillInstagram /></InstaLink>
+                <InstaLink href="https://www.instagram.com/studiowickmtl" target="_blank"><AiFillInstagram /></InstaLink>
             </Hours>
             <Policies>
                 <h3>©2023, Studio Wick All Rights Reserved</h3>
@@ -38,6 +38,7 @@ flex-direction: row;
 justify-content: space-evenly;
 background-color: #212e1a;
 color:white;
+height: 10vh;
 `
 
 const Location = styled.div`
@@ -58,7 +59,7 @@ const Policies = styled.div`
 width:12rem;
 `
 
-const InstaLink = styled(Link)`
+const InstaLink = styled.a`
 text-decoration: none;
 color:white;
 font-size: 1.5rem;

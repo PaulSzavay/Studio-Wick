@@ -32,7 +32,7 @@ display: flex;
 background-color: #212e1a;
 justify-content: space-evenly;
 width: 100%;
-height: 6rem;
+height: 10vh;
 `
 
 const Left = styled.div`
@@ -88,9 +88,10 @@ border: none;
 background: white;
 border-radius: 0.5rem;
 transition: all 200ms ease-in;
+box-sizing: border-box;
 
 &:hover{
-    background-color: lightblue;
+    background-color: #C6B8AF;
     outline: white 0.2rem solid;
 }
 `

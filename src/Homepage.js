@@ -2,13 +2,22 @@ import { styled } from "styled-components";
 import Placeholder from "./Assets/Placeholder.jpg"
 import Shampoo from "./Assets/istockphoto-1356587396-612x612.jpg"
 
-import LandingPage from "./LandingPage";
+
 
 const Homepage = () => {
 
     return(
         <>
-        <LandingPage/>
+        <CoverImageDiv>
+            <Book>
+                <BookButton>Book Now!</BookButton>
+                <BookImage src={Placeholder}></BookImage>
+            </Book>
+            <AboutMe>
+                <AboutMeButton>About Me</AboutMeButton>
+                <AboutMeImage src={Shampoo}></AboutMeImage>
+            </AboutMe>
+        </CoverImageDiv>
 
 
         </>
@@ -21,34 +30,42 @@ const CoverImageDiv = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
-height: 75vh;
-width: 175vw;
+height: 80vh;
+width: 100vw;
 
 `
 
 const Book = styled.div`
-max-width: 732px;
+width: 700px;
 margin: 0rem 1rem;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
 `
 
 const BookImage = styled.img`
 max-height: 500px;
-object-fit: cover;
+object-fit: contain;
 
 `
 
-const Shop = styled.div`
-max-width: 713px;
+const AboutMe = styled.div`
+width: 700px;
 margin: 0rem 1rem;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
 `
 
-const ShopImage = styled.img`
+const AboutMeImage = styled.img`
 min-height: 500px;
-
+object-fit: cover;
 `
 
 const BookButton = styled.button`
-transform: translate(265px, -270px);
+position:absolute;
 border: none;
 height: 3rem;
 width: 12rem;
@@ -63,8 +80,8 @@ background-color: white;
 }
 `
 
-const ShopButton = styled.button`
-transform: translate(265px, -270px);
+const AboutMeButton = styled.button`
+position:absolute;
 border: none;
 height: 3rem;
 width: 12rem;
