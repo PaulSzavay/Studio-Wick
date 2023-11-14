@@ -4,6 +4,7 @@ import GlobalStyles from './GlobalStyles';
 import Header from './Header';
 import About from './About';
 import Footer from './Footer';
+import Contact from './Contact';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Homepage/>}/>
         <Route path="/about" element={<About/>}/>
+        <Route path="/contact" element={<Contact/>}/>
       </Routes>
       <Footer/>
     </Router>

@@ -36,10 +36,12 @@ const FooterDiv = styled.div`
 display: flex;
 flex-direction: row;
 justify-content: space-evenly;
-background-color: #212e1a;
+background-color: #9FA37F;
+//color (dark-olive) was #212e1a
 color:white;
 height: 10vh;
-`
+width: 100vw;
+` 
 
 const Location = styled.div`
 `

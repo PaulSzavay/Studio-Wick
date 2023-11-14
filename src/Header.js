@@ -16,7 +16,7 @@ const Header = () => {
             <Right>
                 <Categories>Services</Categories>
                 <Categories to="/about">About</Categories>
-                <Categories>Contact</Categories>
+                <Categories to="/contact">Contact</Categories>
                 <BookNow href="https://www.fresha.com/a/studio-wick-montreal-montreal-1165-rue-ottawa-iga8musl/booking?menu=true" target="_blank">Book Now</BookNow>
             </Right>
         </Top>
@@ -29,9 +29,9 @@ export default Header
 
 const Top = styled.div`
 display: flex;
-background-color: #212e1a;
+background-color: #9FA37F;
 justify-content: space-evenly;
-width: 100%;
+width: 100vw;
 height: 10vh;
 `
 
