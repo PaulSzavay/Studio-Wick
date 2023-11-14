@@ -7,7 +7,7 @@ const Header = () => {
     return(
         <>
         <Top>
-            <Left>
+            {/* <Left>
             <Home to="/"><Image src={LogoImage}/></Home>
                 <Home to="/">
                 <Title>Studio Wick</Title> 
@@ -18,7 +18,7 @@ const Header = () => {
                 <Categories to="/about">About</Categories>
                 <Categories to="/contact">Contact</Categories>
                 <BookNow href="https://www.fresha.com/a/studio-wick-montreal-montreal-1165-rue-ottawa-iga8musl/booking?menu=true" target="_blank">Book Now</BookNow>
-            </Right>
+            </Right> */}
         </Top>
         </>
     )

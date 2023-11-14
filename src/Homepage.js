@@ -21,8 +21,8 @@ const Homepage = () => {
                 <AboutMeImage src={Placeholder}></AboutMeImage>
             </AboutMe>
         </CoverImageDiv>
-        <MissionStatement/>
-        <InstagramScroller/>
+        {/* <MissionStatement/>
+        <InstagramScroller/> */}
         </>
     )
 }
@@ -62,10 +62,12 @@ object-fit: fill;
 
 @media only screen and (max-width: 1400px) {
     max-width: 500px;
+    height: 300px;
 }
 
 @media only screen and (max-width: 600px) {
     max-width: 300px;
+    height: 200px;
 }
 
 
@@ -89,10 +91,12 @@ object-fit: fill;
 
 @media only screen and (max-width: 1400px) {
     max-width: 500px;
+    height: 300px;
 }
 
 @media only screen and (max-width: 600px) {
     max-width: 300px;
+    height: 200px;
 }
 
 `
