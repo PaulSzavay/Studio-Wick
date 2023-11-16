@@ -4,6 +4,7 @@ import Placeholder from "./Assets/Placeholder.jpg"
 import Shampoo from "./Assets/istockphoto-1356587396-612x612.jpg"
 import MissionStatement from "./MissionStatement";
 import InstagramScroller from "./InstagramScroller";
+import MediaQuery from 'react-responsive'
 
 
 
@@ -21,8 +22,8 @@ const Homepage = () => {
                 <AboutMeImage src={Placeholder}></AboutMeImage>
             </AboutMe>
         </CoverImageDiv>
-        {/* <MissionStatement/>
-        <InstagramScroller/> */}
+        <MissionStatement/>
+        <InstagramScroller/>
         </>
     )
 }
@@ -37,13 +38,12 @@ flex-direction: row;
 justify-content: center;
 align-items: center;
 height: 80vh;
-width: 100vw;
+width: 100%;
 background-color: #BEAD93;
 
-@media only screen and (max-width: 1400px) {
+@media only screen and  (max-width: 1400px) {
     flex-direction: column;
 }
-
 `
 
 const Book = styled.div`
@@ -53,26 +53,17 @@ position: relative;
 display: flex;
 justify-content: center;
 align-items: center;
-`
+padding: 1rem;
+border: 1px solid black;
 
-const AboutMeImage = styled.img`
-height: 500px;
-max-width: 700px;
-object-fit: fill;
-
-@media only screen and (max-width: 1400px) {
-    max-width: 500px;
-    height: 300px;
+@media only screen and  (max-width: 1400px) {
+    width: 80%;
 }
 
-@media only screen and (max-width: 600px) {
-    max-width: 300px;
-    height: 200px;
+@media only screen and  (max-width: 350px) {
+    width: 70%;
 }
-
-
 `
-
 const AboutMe = styled.div`
 width: 50%;
 margin: 0rem 0.5rem;
@@ -80,26 +71,20 @@ position: relative;
 display: flex;
 justify-content: center;
 align-items: center;
+padding: 1rem;
 
+border: 1px solid black;
 
-`
-
-const BookImage = styled.img`
-height: 500px;
-max-width: 700px;
-object-fit: fill;
-
-@media only screen and (max-width: 1400px) {
-    max-width: 500px;
-    height: 300px;
+@media only screen and  (max-width: 1400px) {
+    width: 80%;
 }
 
-@media only screen and (max-width: 600px) {
-    max-width: 300px;
-    height: 200px;
+@media only screen and  (max-width: 350px) {
+    width: 70%;
 }
 
 `
+
 
 const BookButton = styled.a`
 position:absolute;
@@ -119,6 +104,19 @@ align-items: center;
 &:hover{
     background-color: orange;
     border-radius: 5rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+    height: 3rem;
+    width: 10rem;
+    font-size: 1rem;
+}
+
+@media only screen and  (max-width: 350px) {
+    height: 2rem;
+    width: 8rem;
+    font-size: 1rem;
 }
 `
 
@@ -141,4 +139,62 @@ align-items: center;
     background-color: orange;
     border-radius: 5rem;
 }
+
+@media only screen and  (max-width: 600px) {
+    height: 3rem;
+    width: 10rem;
+    font-size: 1rem;
+}
+
+@media only screen and  (max-width: 350px) {
+    height: 2rem;
+    width: 8rem;
+    font-size: 1rem;
+}
 `
+
+const BookImage = styled.img`
+height: 500px;
+max-width: 700px;
+object-fit: fill;
+
+@media only screen and  (max-width: 1400px) {
+    min-width: 500px;
+    height: 300px;
+}
+
+@media only screen and  (max-width: 600px) {
+    min-width: 300px;
+    height: 200px;
+}
+
+@media only screen and  (max-width: 350px) {
+    min-width: 200px;
+    height: 125px;
+}
+`
+
+
+const AboutMeImage = styled.img`
+height: 500px;
+max-width: 700px;
+object-fit: fill;
+
+@media only screen and  (max-width: 1400px) {
+    max-width: 500px;
+    height: 300px;
+}
+
+@media only screen and  (max-width: 600px) {
+    max-width: 300px;
+    height: 200px;
+}
+
+@media only screen and  (max-width: 350px) {
+    max-width: 200px;
+    height: 125px;
+}
+`
+
+
+

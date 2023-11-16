@@ -17,13 +17,12 @@ export default InstagramScroller
 
 
 const InstagramSection = styled.section`
-position: relative;
 display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
-max-width: 100vw;
 height: 80vh;
+width: 100%;
 background-color: #BEAD93;
 box-sizing: border-box;
 

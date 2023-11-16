@@ -26,14 +26,13 @@ export default About
 
 
 const AboutSection = styled.section`
-position: relative;
 display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
-max-width: 100%;
 height: 80vh;
-background-color: #eef6ed;
+width: 100%;
+background-color: #C6B8AF;
 box-sizing: border-box;
 `
 
@@ -66,6 +65,8 @@ const AboutDescription = styled.p`
 width: 43rem;
 font-size: 1.5rem;
 text-indent: 50px;
+text-align: justify;
+text-justify: inter-word;
 `
 
 const AboutDescriptionTop = styled.p`
@@ -73,6 +74,8 @@ width: 43rem;
 font-size: 1.5rem;
 margin-top: 0 ;
 text-indent: 50px;
+text-align: justify;
+text-justify: inter-word;
 `
 
 
