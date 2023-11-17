@@ -13,7 +13,7 @@ const Homepage = () => {
     return(
         <>
         <CoverImageDiv>
-            <Book>
+            <Book href="https://www.fresha.com/a/studio-wick-montreal-montreal-1165-rue-ottawa-iga8musl" target="_blank">
                 <BookButton href="https://www.fresha.com/a/studio-wick-montreal-montreal-1165-rue-ottawa-iga8musl" target="_blank">Book Now</BookButton>
                 <BookImage src={Shampoo}></BookImage>
             </Book>
@@ -54,7 +54,8 @@ display: flex;
 justify-content: center;
 align-items: center;
 padding: 1rem;
-border: 1px solid black;
+
+
 
 @media only screen and  (max-width: 1400px) {
     width: 80%;
@@ -73,7 +74,7 @@ justify-content: center;
 align-items: center;
 padding: 1rem;
 
-border: 1px solid black;
+
 
 @media only screen and  (max-width: 1400px) {
     width: 80%;
@@ -103,9 +104,12 @@ align-items: center;
 
 &:hover{
     background-color: orange;
-    border-radius: 5rem;
 }
 
+& ${Book}:hover{
+        background-color: greenyellow;
+        color: black;
+    }
 
 @media only screen and (max-width: 600px) {
     height: 3rem;

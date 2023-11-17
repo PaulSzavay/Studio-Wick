@@ -56,13 +56,13 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-width: 90%;
+width: 80%;
 padding: 0.5rem 0 0 0;
 margin-left: 1rem;
-border: 1px solid black;
+border: 0.1rem solid rgb(33,46,26,0.5) ;
 border-radius: 1rem;
 color:#212e1a;
-background-color:#968E8C;
+background-color:#BEAD93;
 
 
 @media only screen and (max-width: 1050px) {
@@ -92,7 +92,7 @@ text-align: center;
 `
 
 const MissionStatementText = styled.p`
-width: 75%;
+width: 90%;
 font-size: 1.5rem;
 text-indent: 50px;
 text-align: justify;
