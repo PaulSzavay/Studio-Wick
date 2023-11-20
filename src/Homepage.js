@@ -4,7 +4,7 @@ import Placeholder from "./Assets/Placeholder.jpg"
 import Shampoo from "./Assets/istockphoto-1356587396-612x612.jpg"
 import MissionStatement from "./MissionStatement";
 import InstagramScroller from "./InstagramScroller";
-import MediaQuery from 'react-responsive'
+import MediaQuery from 'react-responsive';
 
 
 
@@ -13,10 +13,14 @@ const Homepage = () => {
     return(
         <>
         <CoverImageDiv>
-            <Book href="https://www.fresha.com/a/studio-wick-montreal-montreal-1165-rue-ottawa-iga8musl" target="_blank">
-                <BookButton href="https://www.fresha.com/a/studio-wick-montreal-montreal-1165-rue-ottawa-iga8musl" target="_blank">Book Now</BookButton>
+            
+            <Book>
+                <BookButton className="button" href="https://www.fresha.com/a/studio-wick-montreal-montreal-1165-rue-ottawa-iga8musl" target="_blank">Book Now</BookButton>
+                <a href="https://www.fresha.com/a/studio-wick-montreal-montreal-1165-rue-ottawa-iga8musl" target="_blank">
                 <BookImage src={Shampoo}></BookImage>
+                </a>
             </Book>
+            
             <AboutMe>
                 <AboutMeButton to="/about">About Me</AboutMeButton>
                 <AboutMeImage src={Placeholder}></AboutMeImage>
@@ -37,9 +41,9 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
-height: 80vh;
-width: 100%;
 background-color: #BEAD93;
+padding: 8rem 0;
+
 
 @media only screen and  (max-width: 1400px) {
     flex-direction: column;
@@ -47,14 +51,18 @@ background-color: #BEAD93;
 `
 
 const Book = styled.div`
-width: 50%;
-margin: 0rem 0.5rem;
+margin: 0rem 1rem;
 position: relative;
 display: flex;
 justify-content: center;
 align-items: center;
 padding: 1rem;
 
+&:hover{
+    .button{
+    background-color:green;
+    }
+}
 
 
 @media only screen and  (max-width: 1400px) {
@@ -66,8 +74,7 @@ padding: 1rem;
 }
 `
 const AboutMe = styled.div`
-width: 50%;
-margin: 0rem 0.5rem;
+margin: 0rem 1rem;
 position: relative;
 display: flex;
 justify-content: center;

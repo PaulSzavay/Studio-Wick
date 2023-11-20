@@ -38,24 +38,19 @@ export default Header
 
 
 const Top = styled.div`
+padding: 1rem 2rem;
 display: flex;
 flex-direction: row;
-justify-content: space-evenly;
+justify-content: space-between;
 align-items: center;
-height: 10vh;
-width: 100%;
 background-color:#212e1a;
 //#9FA37F//
-
 
 `
 
 const Left = styled.div`
-width: 50%;
 display: flex;
 align-items: center;
-justify-content: left;
-margin-left: 1rem;
 `
 
 const Image = styled.img`
@@ -76,41 +71,33 @@ max-width: 14rem;
 
 
 const Right = styled.div`
-width: 50%;
 display: flex;
-justify-content: right;
 align-items: center;
-color:#9FA37F;
-padding: 0 0.75rem 0 0;
-
 `
 
 
 const Categories = styled(Link)`
-    margin: 0 1rem;
-    text-decoration: none;
-    color:#9FA37F;
-    font-size: 2rem;
+position: relative;
+margin: 0 0.75rem;
+text-decoration: none;
+color:#9FA37F;
+font-size: clamp(1rem, 2.5vw, 2rem);
+transition: ease-in-out 0.3s;
 
+&:hover{
+    text-decoration: underline;
+    padding-bottom: 0.5rem;
+}
 
 `
 
 const Home = styled(Link)`
-height: 5rem;
-max-width: 7rem;
-text-decoration: none;
-color:white;
 display: flex;
 align-items: center;
 justify-content: center;
 `
 
 const Home2 = styled(Link)`
-margin-left: 3rem;
-height: 5rem;
-max-width: 7rem;
-text-decoration: none;
-color:white;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -121,25 +108,40 @@ display: flex;
 justify-content: center;
 align-items: center;
 text-decoration: none;
-color:black;
+color:#212e1a;
 font-size: 2rem;
 min-height: 3rem;
 min-width: 12rem;
 padding: 0;
 border: none;
-background: white;
+background: #9FA37F;
 border-radius: 0.5rem;
 transition: all 200ms ease-in;
 box-sizing: border-box;
 
-&:hover{
-    background-color: #C6B8AF;
-    outline: white 0.2rem solid;
+&::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
 }
-`
 
-const Title = styled.h1`
-margin: 0;
+&:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #212e1a;
+}
+
+&:hover{
+  color: #212e1a;
+  box-shadow: 0 0 5px #212e1a;
+  text-shadow: 0 0 5px #212e1a;
+}
 `
 
 const HamburgerMenu = styled.div`

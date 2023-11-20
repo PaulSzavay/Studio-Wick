@@ -30,7 +30,7 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
-height: 80vh;
+/* height: 80vh; */
 width: 100%;
 background-color: #C6B8AF;
 box-sizing: border-box;
