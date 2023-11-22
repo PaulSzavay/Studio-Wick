@@ -148,6 +148,9 @@ const Follow = styled.div`
   align-items: center;
   height: 4svh;
   padding-bottom: 0.5rem;
+  @media only screen and (max-width: 750px) {
+    padding: 1.5rem 0 1rem 0;
+  }
 `;
 
 const Email = styled.a`
@@ -167,10 +170,7 @@ const FollowDiv = styled.div`
   align-items: center;
   padding-bottom: 0.75rem;
 
-  @media only screen and (max-width: 750px) {
-    padding-top: 1.5rem;
-    margin: 0.5rem 0;
-  }
+
 
   @media only screen and (max-width: 350px) {
     p{
