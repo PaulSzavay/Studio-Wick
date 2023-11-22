@@ -13,18 +13,18 @@ const Homepage = () => {
     return(
         <>
         <CoverImageDiv>
-            
-            <Book>
-                <BookButton className="button" href="https://www.fresha.com/a/studio-wick-montreal-montreal-1165-rue-ottawa-iga8musl" target="_blank">Book Now</BookButton>
-                <a href="https://www.fresha.com/a/studio-wick-montreal-montreal-1165-rue-ottawa-iga8musl" target="_blank">
-                <BookImage src={Shampoo}></BookImage>
-                </a>
-            </Book>
-            
-            <AboutMe>
-                <AboutMeButton to="/about">About Me</AboutMeButton>
-                <AboutMeImage src={Placeholder}></AboutMeImage>
-            </AboutMe>
+                <Book>
+                    <BookButton className="button" href="https://www.fresha.com/a/studio-wick-montreal-montreal-1165-rue-ottawa-iga8musl" target="_blank">Book Now</BookButton>
+                    <a href="https://www.fresha.com/a/studio-wick-montreal-montreal-1165-rue-ottawa-iga8musl" target="_blank">
+                    <BookImage src={Shampoo}></BookImage>
+                    </a>
+                </Book>
+                <AboutMe>
+                    <AboutMeButton className="button2" to="/about">About Me</AboutMeButton>
+                    <Link to="/about">
+                    <AboutMeImage src={Placeholder}></AboutMeImage>
+                    </Link>
+                </AboutMe>
         </CoverImageDiv>
         <MissionStatement/>
         <InstagramScroller/>
@@ -46,17 +46,18 @@ padding: 8rem 0;
 
 
 @media only screen and  (max-width: 1400px) {
+    padding: 12rem 0;
     flex-direction: column;
 }
 `
 
 const Book = styled.div`
-margin: 0rem 1rem;
 position: relative;
 display: flex;
 justify-content: center;
 align-items: center;
-padding: 1rem;
+max-width: 700px;
+
 
 &:hover{
     .button{
@@ -74,13 +75,18 @@ padding: 1rem;
 }
 `
 const AboutMe = styled.div`
-margin: 0rem 1rem;
 position: relative;
 display: flex;
 justify-content: center;
 align-items: center;
-padding: 1rem;
+max-width: 700px;
 
+
+&:hover{
+    .button2{
+    background-color:green;
+    }
+}
 
 
 @media only screen and  (max-width: 1400px) {
@@ -107,16 +113,6 @@ text-decoration: none;
 display: flex;
 justify-content: center;
 align-items: center;
-
-
-&:hover{
-    background-color: orange;
-}
-
-& ${Book}:hover{
-        background-color: greenyellow;
-        color: black;
-    }
 
 @media only screen and (max-width: 600px) {
     height: 3rem;
@@ -146,11 +142,6 @@ justify-content: center;
 align-items: center;
 
 
-&:hover{
-    background-color: orange;
-    border-radius: 5rem;
-}
-
 @media only screen and  (max-width: 600px) {
     height: 3rem;
     width: 10rem;
@@ -165,9 +156,10 @@ align-items: center;
 `
 
 const BookImage = styled.img`
-height: 500px;
-max-width: 700px;
+height: 400px;
+max-width: 600px;
 object-fit: fill;
+padding: 0 0.75rem;
 
 @media only screen and  (max-width: 1400px) {
     min-width: 500px;
@@ -187,9 +179,10 @@ object-fit: fill;
 
 
 const AboutMeImage = styled.img`
-height: 500px;
-max-width: 700px;
+height: 400px;
+max-width: 600px;
 object-fit: fill;
+padding: 0 0.75rem;
 
 @media only screen and  (max-width: 1400px) {
     max-width: 500px;

@@ -8,15 +8,17 @@ const MissionStatement = () => {
     return(
         <>
         <MissionSection>
-            <MissionText>
-                <MissionTitle>Who are we?</MissionTitle>
-                <MissionStatementText>At StudioWick, we are dedicated to redefining beauty standards and fostering inclusivity. We believe in a world where haircuts have no gender, where strong women are celebrated, and where every individual feels safe, confident, and comfortable in their own skin. Our mission is to empower and uplift, creating a space where authenticity thrives, and self-expression knows no bounds.</MissionStatementText>
-            </MissionText>
-            <MediaQuery minWidth={300}>
-            <MissionPhoto>
-                <MissionImage src={Placeholder2}/>
-            </MissionPhoto>
-            </MediaQuery>
+            <MidContentBlock>
+                    <MissionText>
+                        <MissionTitle>Who are we?</MissionTitle>
+                        <MissionStatementText>At StudioWick, we are dedicated to redefining beauty standards and fostering inclusivity. We believe in a world where haircuts have no gender, where strong women are celebrated, and where every individual feels safe, confident, and comfortable in their own skin. Our mission is to empower and uplift, creating a space where authenticity thrives, and self-expression knows no bounds.</MissionStatementText>
+                    </MissionText>
+                <MediaQuery minWidth={300}>
+                    <MissionPhoto>
+                        <MissionImage src={Placeholder2}/>
+                    </MissionPhoto>
+                </MediaQuery>
+            </MidContentBlock>    
         </MissionSection>
         </>
     )
@@ -30,48 +32,76 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
-/* height: 80vh; */
-width: 100%;
 background-color: #C6B8AF;
-box-sizing: border-box;
+padding: 8rem 0;
 
 @media only screen and (max-width: 1050px) {
     flex-direction: column;
 }
 
-@media only screen and (max-width: 550px) {
-    flex-direction: column;
-    height: 75vh;
+/* @media only screen and (max-width: 550px) {
+
 }
 
 @media only screen and (max-width: 450px) {
-    flex-direction: column;
-    height: 70vh;
-}
 
+} */
 `
+
+const MidContentBlock = styled.div`
+display: flex;
+justify-content: space-between;
+
+max-width: 1300px;
+
+  @media (max-width: 850px) {
+    width: 90vw;
+    
+  }
+
+  @media (max-width: 550px) {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    
+  }
+`
+
+
 
 const MissionText = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-width: 80%;
-padding: 0.5rem 0 0 0;
-margin-left: 1rem;
 border: 0.1rem solid rgb(33,46,26,0.5) ;
 border-radius: 1rem;
 color:#212e1a;
 background-color:#BEAD93;
+padding: 4rem;
 
 
-@media only screen and (max-width: 1050px) {
-    margin-left: 0rem;
+
+@media only screen and (max-width: 1400px) {
+    padding: 1rem;
 }
 
 
-@media only screen and (max-width: 800px) {
-    margin-left: 0rem;
+@media only screen and (max-width: 1050px) {
+    padding: 0 2rem;
+}
+
+
+@media only screen and (max-width: 900px) {
+
+}
+
+@media only screen and (max-width: 650px) {
+
+}
+
+@media only screen and (max-width: 433px) {
+
 }
 
 `
@@ -92,9 +122,7 @@ text-align: center;
 `
 
 const MissionStatementText = styled.p`
-width: 90%;
 font-size: 1.5rem;
-text-indent: 50px;
 text-align: justify;
 
 
@@ -113,19 +141,35 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-width: 100%;
 
 @media only screen and (max-width: 1050px) {
-    margin-top: 1rem;
+    
 }
 
 `
 
 const MissionImage = styled.img`
-max-width:90%;
+
+
+@media only screen and (max-width: 1400px) {
+}
+
 
 @media only screen and (max-width: 1050px) {
-    max-width: 55%;
 }
+
+
+@media only screen and (max-width: 900px) {
+
+}
+
+@media only screen and (max-width: 650px) {
+
+}
+
+@media only screen and (max-width: 433px) {
+
+}
+
 
 `

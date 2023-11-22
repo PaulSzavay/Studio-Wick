@@ -89,6 +89,7 @@ transition: ease-in-out 0.3s;
     padding-bottom: 0.5rem;
 }
 
+
 `
 
 const Home = styled(Link)`
