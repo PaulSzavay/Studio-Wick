@@ -169,6 +169,7 @@ const FollowDiv = styled.div`
 
   @media only screen and (max-width: 750px) {
     padding-top: 1.5rem;
+    margin: 0.5rem 0;
   }
 
   @media only screen and (max-width: 350px) {
@@ -219,10 +220,11 @@ const Circle = styled.div`
   margin: 0 0 0 1rem;
   height: 2rem;
   width: 2rem;
-  border-radius: 50%;
-
-  @media only screen and (max-width: 350px) {
+  border-radius: 50%;  
+  
+  @media only screen and (max-width: 750px) {
     height: 1.75rem;
     width: 1.75rem;
   }
+
 `;
