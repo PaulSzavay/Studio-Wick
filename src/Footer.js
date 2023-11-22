@@ -187,6 +187,7 @@ const Policies = styled.div`
 `;
 
 const ReactIcons = styled.a`
+  display: flex;
   font-size: 1.3rem;
   padding: 0 0.4rem;
   text-decoration: none;
@@ -220,7 +221,7 @@ const Circle = styled.div`
   margin: 0 0 0 1rem;
   height: 2rem;
   width: 2rem;
-  border-radius: 50%;  
+  border-radius: 55%;  
   
   @media only screen and (max-width: 750px) {
     height: 1.75rem;
