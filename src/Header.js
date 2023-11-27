@@ -4,8 +4,17 @@ import LogoImage from "./Assets/STUDIO-WICK-01.png"
 import LogoImage2 from "./Assets/STUDIO-WICK-02.png"
 import { RxHamburgerMenu } from "react-icons/rx";
 import MediaQuery from 'react-responsive'
+import React, { useState } from "react";
 
 const Header = () => {
+    const [Clicked, setClicked] = useState(false)
+
+    const toggleHamburger = () => {
+        setClicked(!Clicked)
+    }
+
+    console.log(Clicked)
+
 
     return(
         <>
@@ -26,7 +35,14 @@ const Header = () => {
                     <BookNow href="https://www.fresha.com/a/studio-wick-montreal-montreal-1165-rue-ottawa-iga8musl/booking?menu=true" target="_blank">Book Now</BookNow>
                 </MediaQuery>
                 <MediaQuery maxWidth={999}>
-                    <HamburgerMenu><RxHamburgerMenu /></HamburgerMenu>
+                    <HamburgerMenu>
+                        <HamburgerIcon><RxHamburgerMenu onClick={toggleHamburger}/></HamburgerIcon>
+                    <ul className={Clicked ? "open" : "closed"}>
+                        <CategoriesHamburger to="/about" onClick={toggleHamburger}><li>About</li></CategoriesHamburger>
+                        <CategoriesHamburger to="/services" onClick={toggleHamburger}><li>Services</li></CategoriesHamburger>
+                        <CategoriesHamburger to="/contact" onClick={toggleHamburger}><li>Contact</li></CategoriesHamburger>
+                    </ul>
+                    </HamburgerMenu>
                 </MediaQuery>
             </Right>
         </Top>
@@ -147,10 +163,45 @@ box-sizing: border-box;
 
 const HamburgerMenu = styled.div`
 display: flex;
+flex-direction: column;
 justify-content: center;
 align-items: center;
 font-size: 5rem;
 color:#9FA37F;
+
+
+ul.closed {
+      display: none;
+    }
+
+ul.open {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    text-align: right;
+    list-style: none;
+    font-size: 2rem;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    transform: translate(10%, 90%);
+
+
+ }
+
+
+ li {
+        border-radius: 0;
+        border-bottom: none;
+        justify-content: end;
+        font-weight: 600;
+        border-radius: 0px;
+        border: none;
+        padding: 10px 20px 10px;
+        background-color: #212e1a;
+        font-size: 1rem;
+      }
+
 
 @media only screen and (max-width: 600px) {
     font-size: 4rem;
@@ -160,4 +211,16 @@ color:#9FA37F;
     font-size: 2.5rem;
 }
 
+`
+
+const CategoriesHamburger = styled(Link)`
+text-decoration: none;
+color:white;
+`
+
+const HamburgerIcon = styled.div`
+display: flex;
+&:hover{
+    border: 1px solid white;
+}
 `

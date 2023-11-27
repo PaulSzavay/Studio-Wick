@@ -2,12 +2,17 @@ import { styled } from "styled-components";
 
 
 
+
+
+
+
 const InstagramScroller = () => {
 
     return(
         <>
         <InstagramSection>
                 <InstagramTitle>InstagramScroller</InstagramTitle>
+                {/* <script type="text/javascript" src="https://www.juicer.io/embed/yung_szavion/embed-code.js" async defer></script> */}
         </InstagramSection>
         </>
     )
