@@ -148,7 +148,7 @@ text-indent: 0%;
 text-align: center;
 font-size: 0.85rem;
 margin: 0rem;
-padding: 1rem;
+
 }
 `
 
