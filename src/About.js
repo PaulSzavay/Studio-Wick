@@ -84,6 +84,7 @@ margin: 2rem;
 @media only screen and  (max-width: 1000px) {
     flex-direction: column-reverse;
     margin: 0rem;
+    width: 90%;
 }
 `
 
@@ -130,7 +131,10 @@ font-size: 2rem;
 margin: 0;
 
 @media only screen and  (max-width: 1000px) {
-font-size: 1.6rem;
+font-size: 1.5rem;
+display: flex;
+justify-content: center;
+align-items: center;
 text-align: center;
 }
 
