@@ -80,8 +80,10 @@ min-height: 175px;
 display: flex;
 justify-content: center;
 align-items: center;
+margin: 2rem;
 @media only screen and  (max-width: 1000px) {
     flex-direction: column-reverse;
+    margin: 0rem;
 }
 `
 
@@ -124,17 +126,30 @@ padding-top: 1.5rem;
 `
 
 const AboutTitle = styled.h1`
-/* font-size: 3rem;
-margin: 0; */
+font-size: 2rem;
+margin: 0;
+
+@media only screen and  (max-width: 1000px) {
+font-size: 1rem;
+text-align: center;
+}
 
 `
 
 const AboutDescription = styled.p`
-/* width: 43rem;
 font-size: 1.5rem;
+margin: 1rem;
 text-indent: 50px;
 text-align: justify;
-text-justify: inter-word; */
+text-justify: inter-word;
+
+@media only screen and  (max-width: 1000px) {
+text-indent: 0%;
+text-align: left;
+font-size: small;
+margin: 0rem;
+padding: 1rem;
+}
 `
 
 
