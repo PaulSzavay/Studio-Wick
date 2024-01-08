@@ -116,11 +116,11 @@ padding-left: 3rem;
 padding-top: 1.5rem;
 
 @media only screen and  (max-width: 1000px) {
-    padding-left: 1rem;
+    /* padding-left: 1rem; */
     font-size: smaller;
 }
 @media only screen and  (max-width: 300px) {
-    padding-left: 0.5rem;
+    /* padding-left: 0.5rem; */
     font-size: x-small;
 }
 `
