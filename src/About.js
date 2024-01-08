@@ -130,7 +130,7 @@ font-size: 2rem;
 margin: 0;
 
 @media only screen and  (max-width: 1000px) {
-font-size: 1.1rem;
+font-size: 1.5rem;
 text-align: center;
 }
 
@@ -148,7 +148,7 @@ text-indent: 0%;
 text-align: center;
 font-size: 0.85rem;
 margin: 0rem;
-
+padding-top: 1rem;
 }
 `
 
