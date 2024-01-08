@@ -19,7 +19,7 @@ const Footer = () => {
               >
                 <IconPDiv>
                   <ReactIcons>
-                    <CiLocationOn />
+                    <CiLocationOn fontSize="1.5rem" />
                   </ReactIcons>
                   <Email>1165 Rue Ottawa Montréal, QC H3C 1S6</Email>
                 </IconPDiv>
@@ -89,6 +89,21 @@ const Footer = () => {
 
 export default Footer;
 
+const ReactIcons = styled.a`
+  display: flex;
+  font-size: 1.3rem;
+  padding: 0 0.4rem;
+  text-decoration: none;
+  color: white;
+  @media only screen and (max-width: 750px) {
+    padding: 0;
+  }
+
+  @media only screen and (max-width: 750px) {
+    font-size: 1rem;
+  }
+`;
+
 const FooterDiv = styled.div`
   display: flex;
   flex-direction: row;
@@ -120,7 +135,9 @@ const MidContentBlock = styled.div`
   }
 `;
 
-const Location = styled.div``;
+const Location = styled.div`
+margin-left: -4px;
+`;
 
 const GoogleMaps = styled.a`
   text-decoration: none;
@@ -186,27 +203,14 @@ const Policies = styled.div`
   }
 `;
 
-const ReactIcons = styled.a`
-  display: flex;
-  font-size: 1.3rem;
-  padding: 0 0.4rem;
-  text-decoration: none;
-  color: white;
-  @media only screen and (max-width: 750px) {
-    padding: 0;
-  }
 
-  @media only screen and (max-width: 750px) {
-    font-size: 1rem;
-  }
-`;
 
 const IconPDiv = styled.div`
   display: flex;
   flex-direction: row;
-
-
 `;
+
+
 
 const Designer = styled.a`
   text-decoration: none;

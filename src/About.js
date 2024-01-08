@@ -130,7 +130,7 @@ font-size: 2rem;
 margin: 0;
 
 @media only screen and  (max-width: 1000px) {
-font-size: 1rem;
+font-size: 1.1rem;
 text-align: center;
 }
 
@@ -145,8 +145,8 @@ text-justify: inter-word;
 
 @media only screen and  (max-width: 1000px) {
 text-indent: 0%;
-text-align: left;
-font-size: small;
+text-align: center;
+font-size: 0.85rem;
 margin: 0rem;
 padding: 1rem;
 }
