@@ -130,7 +130,7 @@ font-size: 2rem;
 margin: 0;
 
 @media only screen and  (max-width: 1000px) {
-font-size: 1.5rem;
+font-size: 1.6rem;
 text-align: center;
 }
 
