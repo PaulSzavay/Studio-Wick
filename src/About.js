@@ -150,9 +150,9 @@ text-justify: inter-word;
 @media only screen and  (max-width: 1000px) {
 text-indent: 0%;
 text-align: center;
-font-size: 0.85rem;
+font-size: 0.9rem;
 margin: 0rem;
-padding: 1rem;
+padding-top: 1rem;
 }
 `
 
