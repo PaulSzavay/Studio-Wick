@@ -40,13 +40,13 @@ export default Header
 const Top = styled.div`
 position:fixed;
 width: 100vw;
-padding: 0.5rem 2rem;
+padding: 0.5rem 1rem;
 display: flex;
 flex-direction: row;
 justify-content: space-between;
 align-items: center;
 background-color:#212e1a;
-z-index: 50;
+
 //#9FA37F//
 
 `

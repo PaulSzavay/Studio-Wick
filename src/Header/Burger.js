@@ -24,7 +24,7 @@ const Burger = () => {
 export default Burger
 
 const Hamburger = styled.div`
-width: 2rem;
+width: 3rem;
 height: 3rem;
 top: 2rem;
 right: 4.5rem;
