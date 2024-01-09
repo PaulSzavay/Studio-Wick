@@ -38,17 +38,6 @@ const About = () => {
                 <AboutDescription>When clients visit StudioWick, they can expect a safe space where they can truly be themselves. Steff is dedicated to listening, understanding, and making your hair goals a reality. She aims to provide an atmosphere that fosters a sense of comfort and belonging.</AboutDescription>
             </AboutText>
             </Section>
-{/*             
-            <PhotoDiv>
-            <WickPhoto src={Steph}/>
-            </PhotoDiv>
-            <AboutText>
-                <AboutTitle>Who is Steff?</AboutTitle>
-                {/* <AboutDescriptionTop>Steff always wanted to be a hairstylist. Graduating from Algonquin College in Hairstyling, Steff spent the first 6 years of her career in Ottawa. In 2021, she moved back home to Montreal, and in 2023, opened StudioWick. Steff specializes in precision cutting and takes a lot of pride in it. She also has a passion for highlighting and big colour transformations.</AboutDescriptionTop>
-                <AboutDescription>Steff is motivated by challenging society's beauty standards, and strives to create an environment where people don't have to conform to a specific image. She believes in listening to her clients and offering her opinions in a way that complements their desires.</AboutDescription>
-                <AboutDescription>When clients visit StudioWick, they can expect a safe space where they can truly be themselves. Steff is dedicated to listening, understanding, and making your hair goals a reality. She aims to provide an atmosphere that fosters a sense of comfort and belonging.</AboutDescription> */}
-            {/* </AboutText> */}
-
             </Box>
         </AboutSection>
 
@@ -64,6 +53,7 @@ background-color: #C6B8AF;
 display: flex;
 justify-content: center;
 align-items: center;
+padding: 8rem 0;
 `
 
 

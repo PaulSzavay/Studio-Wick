@@ -61,7 +61,7 @@ max-width: 700px;
 
 &:hover{
     .button{
-    background-color:green;
+    background-color:#BEAD93;
     }
 }
 
@@ -84,7 +84,7 @@ max-width: 700px;
 
 &:hover{
     .button2{
-    background-color:green;
+    background-color:#BEAD93;
     }
 }
 

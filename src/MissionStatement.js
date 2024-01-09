@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import Placeholder2 from "./Assets/Placeholder2.png"
+import SteffPhoto from "./Assets/Steff4Update.jpg"
 import MediaQuery from 'react-responsive'
 
 
@@ -15,7 +15,7 @@ const MissionStatement = () => {
                     </MissionText>
                 <MediaQuery minWidth={300}>
                     <MissionPhoto>
-                        <MissionImage src={Placeholder2}/>
+                        <MissionImage src={SteffPhoto}/>
                     </MissionPhoto>
                 </MediaQuery>
             </MidContentBlock>    
@@ -74,11 +74,11 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-border: 0.1rem solid rgb(33,46,26,0.5) ;
-border-radius: 1rem;
+/* border: 0.1rem solid rgb(33,46,26,0.5) ;
+border-radius: 1rem; */
 color:#212e1a;
-background-color:#BEAD93;
-padding: 4rem;
+/* background-color:#BEAD93; */
+padding: 5rem;
 
 
 
@@ -124,7 +124,7 @@ text-align: center;
 const MissionStatementText = styled.p`
 font-size: 1.5rem;
 text-align: justify;
-
+text-indent: 50px;
 
 
 @media only screen and (max-width: 800px) {
@@ -142,6 +142,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 
+
 @media only screen and (max-width: 1050px) {
     
 }
@@ -149,7 +150,7 @@ align-items: center;
 `
 
 const MissionImage = styled.img`
-
+width: 100%;
 
 @media only screen and (max-width: 1400px) {
 }
