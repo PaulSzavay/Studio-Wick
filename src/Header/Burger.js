@@ -8,7 +8,6 @@ const Burger = () => {
 
     const [open, setOpen] = useState(false)
 
-
     return(
         <>
         <Hamburger open={open} onClick={()=> setOpen(!open)}>

@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { Link } from "react-router-dom"
 
-const Nav = ({open}, setOpen={setOpen}) => {
+const Nav = ({open}, {setOpen}) => {
 
     return(
         <>

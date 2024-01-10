@@ -2,20 +2,11 @@ import { styled } from "styled-components";
 import { Link } from "react-router-dom";
 import LogoImage from "../Assets/STUDIO-WICK-01.png"
 import LogoImage2 from "../Assets/STUDIO-WICK-02.png"
-import { RxHamburgerMenu } from "react-icons/rx";
 import MediaQuery from 'react-responsive'
 import React, { useState } from "react";
-import Nav from "./Nav";
 import Burger from "./Burger";
 
 const Header = () => {
-    const [Clicked, setClicked] = useState(false)
-
-    const toggleHamburger = () => {
-        setClicked(!Clicked)
-    }
-
-    console.log(Clicked)
 
 
     return(
@@ -27,8 +18,7 @@ const Header = () => {
                 <MediaQuery minWidth={1001}>
                     <Home2 to="/"><Image2 src={LogoImage2}/></Home2>
                 </MediaQuery>
-
-                <Burger/>
+                <Burger />
         </Top>
         </>
     )
@@ -46,7 +36,7 @@ flex-direction: row;
 justify-content: space-between;
 align-items: center;
 background-color:#212e1a;
-
+z-index: 50;
 //#9FA37F//
 
 `
