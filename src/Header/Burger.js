@@ -4,18 +4,16 @@ import Nav from "./Nav";
 
 
 
-const Burger = () => {
-
-    const [open, setOpen] = useState(false)
+const Burger = ({open, changeOpenValue}) => {
 
     return(
         <>
-        <Hamburger open={open} onClick={()=> setOpen(!open)}>
+        <Hamburger open={open} onClick={changeOpenValue}>
             <div />
             <div />
             <div />
         </Hamburger>
-        <Nav open={open} setOpen={setOpen}/>
+        <Nav open={open} changeOpenValue={changeOpenValue}/>
         </>
     )
 }

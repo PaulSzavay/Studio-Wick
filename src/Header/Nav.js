@@ -1,14 +1,15 @@
 import styled from "styled-components"
 import { Link } from "react-router-dom"
 
-const Nav = ({open}, {setOpen}) => {
+const Nav = ({open, changeOpenValue}) => {
+
 
     return(
         <>
             <List open={open}>
-                <li><Linkto onClick={()=> setOpen(!open)} to="/about">About</Linkto></li>
-                <li><Linkto onClick={()=> setOpen(!open)} to="/services">Services</Linkto></li>
-                <li><Linkto onClick={()=> setOpen(!open)} to="/contact">Contact</Linkto></li>
+                <li><Linkto onClick={changeOpenValue} to="/about">About</Linkto></li>
+                <li><Linkto onClick={changeOpenValue} to="/services">Services</Linkto></li>
+                <li><Linkto onClick={changeOpenValue} to="/contact">Contact</Linkto></li>
                 <li><BookNowTag href="https://www.fresha.com/a/studio-wick-montreal-montreal-1165-rue-ottawa-iga8musl/booking?menu=true" target="_blank">Book Now</BookNowTag></li>
             </List>
         </>

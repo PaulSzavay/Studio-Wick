@@ -8,17 +8,22 @@ import Burger from "./Burger";
 
 const Header = () => {
 
+    const [open, setOpen] = useState(false)
+
+    const changeOpenValue = () => {
+        setOpen(!open)
+    }
 
     return(
         <>
         <Top>
                 <MediaQuery maxWidth={1000}>
-                    <Home to="/"><Image src={LogoImage}/></Home>
+                    <Home to="/" open={open} onClick={changeOpenValue}><Image src={LogoImage}/></Home>
                 </MediaQuery>
                 <MediaQuery minWidth={1001}>
                     <Home2 to="/"><Image2 src={LogoImage2}/></Home2>
                 </MediaQuery>
-                <Burger />
+                <Burger open={open} changeOpenValue={changeOpenValue}/>
         </Top>
         </>
     )
