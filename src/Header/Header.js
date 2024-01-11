@@ -10,15 +10,21 @@ const Header = () => {
 
     const [open, setOpen] = useState(false)
 
+    const changeOpenValueLogo = () => {
+        if(open === true){
+            setOpen(!open)
+        }
+    }
     const changeOpenValue = () => {
         setOpen(!open)
     }
+
 
     return(
         <>
         <Top>
                 <MediaQuery maxWidth={1000}>
-                    <Home to="/" open={open} onClick={changeOpenValue}><Image src={LogoImage}/></Home>
+                    <Home to="/" onClick={changeOpenValueLogo}><Image src={LogoImage}/></Home>
                 </MediaQuery>
                 <MediaQuery minWidth={1001}>
                     <Home2 to="/"><Image2 src={LogoImage2}/></Home2>
