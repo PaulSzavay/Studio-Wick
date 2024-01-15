@@ -49,7 +49,7 @@ export default About
 
 
 const AboutSection = styled.section`
-background-color: #C6B8AF;
+background-color: #F6F6F6;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -96,7 +96,12 @@ padding: 1rem;
 const WickPhoto = styled.img`
 object-fit: contain;
 border-radius: 25%;
-width: 200px;
+width: 300px;
+
+
+@media only screen and  (max-width: 1000px) {
+    width: 250px;
+}
 `
 
 const AboutText = styled.div`
@@ -118,7 +123,7 @@ padding-top: 1.5rem;
 
 const AboutTitle = styled.h1`
 font-size: 2rem;
-margin: 0;
+margin: 0rem 1rem;
 
 @media only screen and  (max-width: 1000px) {
 font-size: 1.5rem;
@@ -133,7 +138,7 @@ text-align: center;
 const AboutDescription = styled.p`
 font-size: 1.5rem;
 margin: 1rem;
-text-indent: 50px;
+/* text-indent: 50px; */
 text-align: justify;
 text-justify: inter-word;
 

@@ -27,7 +27,7 @@ const Homepage = () => {
                 </AboutMe>
         </CoverImageDiv>
         <MissionStatement/>
-        <InstagramScroller/>
+        {/* <InstagramScroller/> */}
         </>
     )
 }
@@ -41,9 +41,9 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
-background-color: #BEAD93;
-padding: 8rem 0;
-
+background-color: #F6F6F6;
+padding: 13rem 0;
+/* background color:#BEAD93 */
 
 @media only screen and  (max-width: 1400px) {
     padding: 12rem 0;
@@ -68,6 +68,7 @@ max-width: 700px;
 
 @media only screen and  (max-width: 1400px) {
     width: 80%;
+    margin-bottom: 2rem;
 }
 
 @media only screen and  (max-width: 350px) {
@@ -80,6 +81,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 max-width: 700px;
+
 
 
 &:hover{
@@ -167,8 +169,8 @@ padding: 0 0.75rem;
 }
 
 @media only screen and  (max-width: 600px) {
-    min-width: 300px;
-    height: 200px;
+    min-width: 350px;
+    height: 220px;
 }
 
 @media only screen and  (max-width: 350px) {
@@ -190,8 +192,8 @@ padding: 0 0.75rem;
 }
 
 @media only screen and  (max-width: 600px) {
-    max-width: 300px;
-    height: 200px;
+    max-width: 350px;
+    height: 220px;
 }
 
 @media only screen and  (max-width: 350px) {

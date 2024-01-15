@@ -10,7 +10,7 @@ const Contact = () => {
                 </ContactTitle>
 
                 <ContactRequest>
-                    Please feel free to reach out to me via text message or DM me on instagram.
+                    Please feel free to reach out to me via text message (514-898-9425) or DM me on <span><Insta href="https://www.instagram.com/studiowickmtl" target="_blank">Instagram</Insta></span>.
                 </ContactRequest>
 
                 <ContactInformation>
@@ -223,4 +223,8 @@ transition: 0.2s ease-in-out;
     color: #212e1a;
     border: 0.1rem solid #212e1a;
 }
+`
+
+const Insta = styled.a`
+color: black;
 `

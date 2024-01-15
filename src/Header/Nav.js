@@ -43,7 +43,7 @@ z-index: 3;
 
 li{
 padding: 18px 10px;
-font-size: clamp(1rem, 2.5vw, 2rem);
+font-size: 1.5rem;
 position: static;
 }
 `

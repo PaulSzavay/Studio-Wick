@@ -14,14 +14,14 @@ const Footer = () => {
           <LeftInfo>
             <Location>
               <GoogleMaps
-                href="https://www.google.com/maps/place/STUDIO+WICK/@45.4931291,-73.5627637,17z/data=!3m1!4b1!4m6!3m5!1s0x4cc91b496cb6b92f:0x90bddfbdee52ed1d!8m2!3d45.4931254!4d-73.5601888!16s%2Fg%2F11trmw4jhs?entry=ttu"
+                href="https://www.google.com/maps/place/1319+Rue+Barr%C3%A9,+Montr%C3%A9al,+QC+H3C+1N3/@45.4922432,-73.5669935,17z/data=!3m1!4b1!4m6!3m5!1s0x4cc91a6136da2cad:0x2974e1cf689cf598!8m2!3d45.4922395!4d-73.5644186!16s%2Fg%2F11tg2y1h8g?entry=ttu"
                 target="_blank"
               >
                 <IconPDiv>
                   <ReactIcons>
-                    <CiLocationOn fontSize="1.5rem" />
+                    <CiLocationOn fontSize="1.25rem" />
                   </ReactIcons>
-                  <Email>1165 Rue Ottawa Montréal, QC H3C 1S6</Email>
+                  <Maps>1319 Rue Barré Montréal, QC H3C 1N3</Maps>
                 </IconPDiv>
               </GoogleMaps>
             </Location>
@@ -30,7 +30,7 @@ const Footer = () => {
                 <ReactIcons>
                   <FiPhone />
                 </ReactIcons>
-                <Email>514-999-9999</Email>
+                <Email>514-898-9425</Email>
               </IconPDiv>
               <IconPDiv>
                 <ReactIcons href="mailto:stephanie.wick22@gmail.com">
@@ -172,15 +172,20 @@ const Follow = styled.div`
 
 const Email = styled.a`
   color: white;
+  text-decoration: underline;
   
 
   @media only screen and (max-width: 750px) {
-    padding: 0 0 0 0.4rem;
+    padding: 0 0 0 0.3rem;
   }
   @media only screen and (max-width: 350px) {
     font-size: 0.75rem;
   }
 `;
+
+const Maps = styled(Email)`
+padding: 0 0.25rem ;
+`
 
 const FollowDiv = styled.div`
   display: flex;
@@ -213,7 +218,7 @@ const IconPDiv = styled.div`
 
 
 const Designer = styled.a`
-  text-decoration: none;
+  text-decoration: underline;
   color: white;
 `;
 
