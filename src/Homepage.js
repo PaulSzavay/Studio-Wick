@@ -1,10 +1,9 @@
 import { styled } from "styled-components";
 import { Link } from "react-router-dom";
-import Placeholder from "./Assets/Placeholder.jpg"
-import Shampoo from "./Assets/istockphoto-1356587396-612x612.jpg"
+import Placeholder from "./Assets/Wick1.jpg"
+import Shampoo from "./Assets/Wick2.jpg"
 import MissionStatement from "./MissionStatement";
-import InstagramScroller from "./InstagramScroller";
-import MediaQuery from 'react-responsive';
+
 
 
 
@@ -42,11 +41,11 @@ flex-direction: row;
 justify-content: center;
 align-items: center;
 background-color: #F6F6F6;
-padding: 13rem 0;
+padding: 10rem 0;
 /* background color:#BEAD93 */
 
 @media only screen and  (max-width: 1400px) {
-    padding: 12rem 0;
+    padding: 5.5rem 0;
     flex-direction: column;
 }
 `
@@ -66,13 +65,12 @@ max-width: 700px;
 }
 
 
-@media only screen and  (max-width: 1400px) {
-    width: 80%;
-    margin-bottom: 2rem;
+@media only screen and  (max-width: 600px) {
+padding-bottom: 1rem;
 }
 
 @media only screen and  (max-width: 350px) {
-    width: 70%;
+
 }
 `
 const AboutMe = styled.div`
@@ -91,12 +89,12 @@ max-width: 700px;
 }
 
 
-@media only screen and  (max-width: 1400px) {
-    width: 80%;
+@media only screen and  (max-width: 1300px) {
+
 }
 
 @media only screen and  (max-width: 350px) {
-    width: 70%;
+
 }
 
 `
@@ -158,47 +156,41 @@ align-items: center;
 `
 
 const BookImage = styled.img`
-height: 400px;
-max-width: 600px;
+max-width: 500px;
 object-fit: fill;
 padding: 0 0.75rem;
 
-@media only screen and  (max-width: 1400px) {
-    min-width: 500px;
-    height: 300px;
+@media only screen and  (max-width: 1300px) {
+    max-width: 325px;
+
 }
 
 @media only screen and  (max-width: 600px) {
-    min-width: 350px;
-    height: 220px;
+
 }
 
 @media only screen and  (max-width: 350px) {
-    min-width: 200px;
-    height: 125px;
+
 }
 `
 
 
 const AboutMeImage = styled.img`
-height: 400px;
-max-width: 600px;
+max-width: 500px;
 object-fit: fill;
 padding: 0 0.75rem;
 
-@media only screen and  (max-width: 1400px) {
-    max-width: 500px;
-    height: 300px;
+@media only screen and  (max-width: 1300px) {
+    max-width: 325px;
 }
 
 @media only screen and  (max-width: 600px) {
-    max-width: 350px;
-    height: 220px;
+
+
 }
 
 @media only screen and  (max-width: 350px) {
-    max-width: 200px;
-    height: 125px;
+
 }
 `
 

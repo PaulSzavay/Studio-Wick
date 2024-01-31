@@ -58,7 +58,7 @@ justify-content: space-between;
 
 max-width: 1300px;
 
-  @media (max-width: 850px) {
+  @media (max-width: 820px) {
     width: 90vw;
     
   }
@@ -123,7 +123,7 @@ margin: 0;
 width: 600px;
 font-style: italic;
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 820px) {
     font-size: 2rem;
     margin-top: 2rem;
     text-align: center;
@@ -132,25 +132,8 @@ font-style: italic;
 @media only screen and (max-width: 550px) {
     /* font-size: 1.25rem; */
 }
-
 `
 
-const MissionStatementText = styled.p`
-font-size: 1.5rem;
-text-align: justify;
-width: 600px;
-/* text-indent: 50px; */
-
-
-@media only screen and (max-width: 800px) {
-    font-size: 1rem;
-}
-
-@media only screen and (max-width: 550px) {
-    font-size: 0.85rem;
-    margin-top: 0.7rem;
-}
-`
 
 const MissionPhoto = styled.div`
 display: flex;
@@ -169,25 +152,14 @@ width: 65%;
 const MissionImage = styled.img`
 width: 100%;
 
-@media only screen and (max-width: 1400px) {
-}
-
-
 @media only screen and (max-width: 1050px) {
+    padding-right: 1rem;
 }
 
-
-@media only screen and (max-width: 900px) {
-
+@media only screen and (max-width: 550px) {
+    padding-right: 0rem;
 }
 
-@media only screen and (max-width: 650px) {
-
-}
-
-@media only screen and (max-width: 433px) {
-
-}
 
 
 `
