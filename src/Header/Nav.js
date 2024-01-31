@@ -8,7 +8,7 @@ const Nav = ({open, changeOpenValue}) => {
         <>
             <List open={open}>
                 <li><Linkto onClick={changeOpenValue} to="/about">About</Linkto></li>
-                <li><Linkto onClick={changeOpenValue} to="/services">Services</Linkto></li>
+                {/* <li><Linkto onClick={changeOpenValue} to="/services">Services</Linkto></li> */}
                 <li><Linkto onClick={changeOpenValue} to="/contact">Contact</Linkto></li>
                 <li><BookNowTag href="https://www.fresha.com/a/studio-wick-montreal-montreal-1165-rue-ottawa-iga8musl/booking?menu=true" target="_blank">Book Now</BookNowTag></li>
             </List>

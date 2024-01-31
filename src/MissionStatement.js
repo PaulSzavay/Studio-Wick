@@ -2,6 +2,7 @@ import { styled } from "styled-components";
 import SteffPhoto from "./Assets/Steff4Update.jpg"
 import MediaQuery from 'react-responsive'
 import { Link } from "react-router-dom";
+import wave from "./Assets/green wavy.png"
 
 
 const MissionStatement = () => {
@@ -9,6 +10,9 @@ const MissionStatement = () => {
     return(
         <>
         <MissionSection>
+            {/* <WaveDiv>
+            <WaveImage src={wave}/><WaveImage src={wave}/><WaveImage src={wave}/><WaveImage src={wave}/><WaveImage src={wave}/><WaveImage src={wave}/><WaveImage src={wave}/><WaveImage src={wave}/><WaveImage src={wave}/>
+            </WaveDiv> */}
             <MidContentBlock>
                     <MissionText>
                         {/* <MissionTitle>Who are we?</MissionTitle>
@@ -32,11 +36,11 @@ export default MissionStatement
 
 const MissionSection = styled.section`
 display: flex;
-flex-direction: row;
+flex-direction: column;
 justify-content: center;
 align-items: center;
 background-color: #F6F6F6;
-padding: 8rem 0;
+padding: 6rem 0;
 
 /* background-color: #C6B8AF; */
 @media only screen and (max-width: 1050px) {
@@ -71,6 +75,12 @@ max-width: 1300px;
   }
 `
 
+// const WaveDiv = styled.div`
+// `
+
+// const WaveImage = styled.img`
+// height: 2rem;
+// `
 
 
 const MissionText = styled.div`

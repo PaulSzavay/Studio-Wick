@@ -41,7 +41,7 @@ flex-direction: row;
 justify-content: center;
 align-items: center;
 background-color: #F6F6F6;
-padding: 10rem 0;
+padding: 10rem 0 0 0;
 /* background color:#BEAD93 */
 
 @media only screen and  (max-width: 1400px) {

@@ -9,6 +9,11 @@ const About = () => {
         <>
         <AboutSection>
         <Box>
+        <Section>
+        <AboutDescription>
+        At StudioWick, we are dedicated to redefining beauty standards and fostering inclusivity. We believe in a world where haircuts have no gender, where strong women are celebrated, and where every individual feels safe, confident, and comfortable in their own skin. Our mission is to empower and uplift, creating a space where authenticity thrives, and self-expression knows no bounds.
+        </AboutDescription>
+        </Section>
             <Section>
             <PhotoDiv>
             <WickPhoto src={Steph1}/>
@@ -75,6 +80,7 @@ margin: 2rem;
     flex-direction: column-reverse;
     margin: 0rem;
     width: 90%;
+    padding-bottom: 1rem;
 }
 `
 
