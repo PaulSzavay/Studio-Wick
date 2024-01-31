@@ -33,11 +33,11 @@ const Footer = () => {
                 <Email>514-898-9425</Email>
               </IconPDiv>
               <IconPDiv>
-                <ReactIcons href="mailto:stephanie.wick22@gmail.com">
+                <ReactIcons href="mailto:studiowick@mail.com">
                   <MdOutlineMailOutline />
                 </ReactIcons>
-                <Email href="mailto:stephanie.wick22@gmail.com">
-                  stephanie.wick22@gmail.com
+                <Email href="mailto:studiowick@mail.com">
+                  studiowick@mail.com
                 </Email>
               </IconPDiv>
             </Contact>

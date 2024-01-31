@@ -29,6 +29,9 @@ const Header = () => {
                 <MediaQuery minWidth={1001}>
                     <Home2 to="/"><Image2 src={LogoImage2}/></Home2>
                 </MediaQuery>
+                <MediaQuery maxWidth={1000}>
+                    <Title>StudioWick</Title>
+                </MediaQuery>
                 <Burger open={open} changeOpenValue={changeOpenValue}/>
         </Top>
         </>
@@ -52,6 +55,11 @@ z-index: 50;
 
 `
 
+const Title = styled.h1`
+padding-right: 1.25rem;
+font-size: 1.75rem;
+color:#9FA37F;
+`
 
 
 const Image = styled.img`
