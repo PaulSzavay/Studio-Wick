@@ -59,6 +59,8 @@ const Title = styled.h1`
 padding-right: 1.25rem;
 font-size: 1.75rem;
 color:#9FA37F;
+font-family: 'Montserrat', sans-serif;
+font-weight: 300;
 `
 
 
