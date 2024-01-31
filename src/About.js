@@ -10,9 +10,9 @@ const About = () => {
         <AboutSection>
         <Box>
         <Section>
-        <AboutDescription>
+        <AboutDescriptionMission>
         At StudioWick, we are dedicated to redefining beauty standards and fostering inclusivity. We believe in a world where haircuts have no gender, where strong women are celebrated, and where every individual feels safe, confident, and comfortable in their own skin. Our mission is to empower and uplift, creating a space where authenticity thrives, and self-expression knows no bounds.
-        </AboutDescription>
+        </AboutDescriptionMission>
         </Section>
             <Section>
             <PhotoDiv>
@@ -157,6 +157,12 @@ padding-top: 1rem;
 }
 `
 
+const AboutDescriptionMission = styled(AboutDescription)`
 
+@media only screen and  (max-width: 1000px) {
+font-size: 1.1rem;
+font-weight: 500;
+}
+`
 
 
