@@ -19,7 +19,7 @@ const Homepage = () => {
                     </a>
                 </Book>
                 <AboutMe>
-                    <AboutMeButton className="button2" to="/about">About Me</AboutMeButton>
+                    <AboutMeButton className="button2" to="/about">About</AboutMeButton>
                     <Link to="/about">
                     <AboutMeImage src={Placeholder}></AboutMeImage>
                     </Link>
