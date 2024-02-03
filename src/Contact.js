@@ -1,6 +1,31 @@
 import { styled } from "styled-components";
+import emailjs from "@emailjs/browser";
+import React, { useRef } from "react";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_1sc9y9l",
+        "template_wsiar0s",
+        form.current,
+        "gq6e2RC6z7b10ccEo"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        },
+        e.target.reset(),
+        window.alert("Email Sent, Thank you!")
+      );
+  };
 
     return(
         <>
@@ -14,16 +39,16 @@ const Contact = () => {
                 </ContactRequest>
 
                 <ContactInformation>
-                    <ContactForm>
+                    <ContactForm ref={form} onSubmit={sendEmail}>
                         <Name for="name">Name:</Name>
-                        <NameInput type="text" name="name" id="name" required></NameInput>
+                        <NameInput type="text" name="from_name" id="name" required></NameInput>
                         <Email for="email">Email:</Email>
-                        <EmailInput type="email" name="email" id="email" required></EmailInput>
+                        <EmailInput type="email" name="from_email" id="email" required></EmailInput>
                         <Subject for="subject">Subject:</Subject>
                         <SubjectInput type="text" name="subject" id="subject" required></SubjectInput>
                         <Message for="message">Message:</Message>
                         <MessageInput type="text" name="message" id="message" required></MessageInput>
-                        <Submit type="submit" onClick={(e)=>e.preventDefault()}>Submit</Submit>
+                        <Submit type="submit">Submit</Submit>
                     </ContactForm>
                 </ContactInformation>
             </ContactDiv>

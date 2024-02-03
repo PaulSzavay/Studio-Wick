@@ -13,6 +13,7 @@ const MissionStatement = () => {
             {/* <WaveDiv>
             <WaveImage src={wave}/><WaveImage src={wave}/><WaveImage src={wave}/><WaveImage src={wave}/><WaveImage src={wave}/><WaveImage src={wave}/><WaveImage src={wave}/><WaveImage src={wave}/><WaveImage src={wave}/>
             </WaveDiv> */}
+            <Statement>Redefining Beauty Standards</Statement>
             <MidContentBlock>
                     <MissionText>
                         {/* <MissionTitle>Who are we?</MissionTitle>
@@ -40,11 +41,13 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 background-color: #F6F6F6;
-padding: 6rem 0;
+position: relative;
+padding: 0 0 3rem;
 
 /* background-color: #C6B8AF; */
 @media only screen and (max-width: 1050px) {
     flex-direction: column;
+    padding: 1rem 0 3rem;
 }
 
 /* @media only screen and (max-width: 550px) {
@@ -204,6 +207,20 @@ text-decoration: none;
     background-color: #9fa37f;
     color: #212e1a;
     border: 0.1rem solid #212e1a;
+}
+`
+
+const Statement = styled.p`
+margin-bottom: 4rem;
+font-family: 'Playfair Display', serif;
+font-size: 3.5rem;
+color:#2A471C;
+font-weight: 500;
+text-align: center;
+
+@media only screen and (max-width: 450px) {
+width: 375px;
+font-size: 2rem;
 }
 `
 

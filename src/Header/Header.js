@@ -20,6 +20,7 @@ const Header = () => {
     }
 
 
+
     return(
         <>
         <Top>
@@ -44,7 +45,7 @@ export default Header
 const Top = styled.div`
 position:fixed;
 width: 100vw;
-padding: 0.5rem 0.5rem;
+padding: 0.5rem 1rem;
 display: flex;
 flex-direction: row;
 justify-content: space-between;
@@ -52,12 +53,14 @@ align-items: center;
 background-color:#212e1a;
 z-index: 50;
 //#9FA37F//
-
+@media only screen and (max-width: 600px) {
+    padding: 0.5rem 0.5rem;
+}
 `
 
 const Title = styled.h1`
 padding-right: 1.25rem;
-font-size: 1.75rem;
+font-size: 1.8rem;
 color:#9FA37F;
 font-family: 'Montserrat', sans-serif;
 font-weight: 300;

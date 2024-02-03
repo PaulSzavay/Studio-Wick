@@ -45,7 +45,7 @@ padding: 10rem 0 0 0;
 /* background color:#BEAD93 */
 
 @media only screen and  (max-width: 1400px) {
-    padding: 5.5rem 0;
+    padding: 6.5rem 0 0 0;
     flex-direction: column;
 }
 `

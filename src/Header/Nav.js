@@ -31,7 +31,7 @@ z-index: 3;
     flex-flow: column nowrap;
     background-color: black;
     position: fixed;
-    top:4rem;
+    top:5.4rem;
     right:0;
     height: 100vh;
     width: 100vw;
