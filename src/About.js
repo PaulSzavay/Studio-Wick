@@ -20,14 +20,14 @@ const About = () => {
             </PhotoDiv>
             <AboutText>
                 <AboutTitle>Who is Steff?</AboutTitle>
-                <AboutDescription>Steff always wanted to be a hairstylist. Graduating from Algonquin College in Hairstyling, Steff spent the first 6 years of her career in Ottawa. In 2021, she moved back home to Montreal, and in 2023, opened StudioWick. Steff specializes in precision cutting and takes a lot of pride in it. She also has a passion for highlighting and big colour transformations.</AboutDescription>
+                <AboutDescription>Steff's lifelong dream was to pursue a career as a hairstylist. After completing her studies at Algonquin College, she dedicated the first six years of her professional life to refining her skills in Ottawa. In 2021, she made the decision to return to her hometown of Montreal. Finally, in 2023, she realized her dream by opening StudioWick. Specializing in precision cutting, Steff takes great pride in her work. Her true passion lies in creating beautiful highlights and transformative color treatments.</AboutDescription>
             </AboutText>
             </Section>
 
             <Section2>
             <AboutText>
                 <AboutTitle>What makes Steff different?</AboutTitle>
-                <AboutDescription>Steff is motivated by challenging society's beauty standards, and strives to create an environment where people don't have to conform to a specific image. She believes in listening to her clients and offering her opinions in a way that complements their desires.</AboutDescription>
+                <AboutDescription>Steff is driven by a desire to challenge society's beauty standards and cultivate an environment where people feel comfortable without the pressure of conforming to a specific image. Her philosophy revolves around attentive listening to her clients and providing thoughtful input that harmonizes with their individual preferences.</AboutDescription>
             </AboutText>
             <PhotoDiv>
             <WickPhoto src={Steph2}/>
@@ -40,7 +40,7 @@ const About = () => {
             </PhotoDiv>
             <AboutText>
                 <AboutTitle>Steff's Goal</AboutTitle>
-                <AboutDescription>When clients visit StudioWick, they can expect a safe space where they can truly be themselves. Steff is dedicated to listening, understanding, and making your hair goals a reality. She aims to provide an atmosphere that fosters a sense of comfort and belonging.</AboutDescription>
+                <AboutDescription>At StudioWick, clients are welcomed into a safe and inclusive space where they are encouraged to express their true selves. Steff is committed to actively listening, empathizing, and helping clients achieve their hair aspirations. Her goal is to cultivate an atmosphere that promotes comfort and a sense of belonging for everyone who walks through the door.</AboutDescription>
             </AboutText>
             </Section>
             </Box>
@@ -144,7 +144,6 @@ text-align: center;
 const AboutDescription = styled.p`
 font-size: 1.5rem;
 margin: 1rem;
-/* text-indent: 50px; */
 text-align: justify;
 text-justify: inter-word;
 
@@ -153,7 +152,7 @@ text-indent: 0%;
 text-align: center;
 font-size: 0.9rem;
 margin: 0rem;
-padding-top: 1rem;
+padding-top: 0.75rem;
 }
 `
 
