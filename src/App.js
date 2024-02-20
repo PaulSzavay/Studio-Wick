@@ -7,6 +7,7 @@ import Footer from './Footer';
 import Contact from './Contact';
 import Services from './Services';
 import ScrollToTop from './ScrollToTop';
+import { Analytics } from '@vercel/analytics'
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         {/* <Route path="/services" element={<Services/>}/> */}
       </Routes>
       <Footer/>
+      <Analytics/>
     </Router>
     </>
   );
