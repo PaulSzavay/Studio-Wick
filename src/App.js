@@ -7,7 +7,7 @@ import Footer from './Footer';
 import Contact from './Contact';
 import Services from './Services';
 import ScrollToTop from './ScrollToTop';
-import { Analytics } from '@vercel/analytics'
+import { Analytics } from '@vercel/analytics/react'
 
 const App = () => {
   return (
