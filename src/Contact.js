@@ -1,6 +1,10 @@
 import { styled } from "styled-components";
 import emailjs from "@emailjs/browser";
 import React, { useRef } from "react";
+import { useTranslation } from "react-i18next"
+
+import i18n from "./i18n";
+
 
 const Contact = () => {
   const form = useRef();
@@ -27,28 +31,33 @@ const Contact = () => {
       );
   };
 
+
+  
+  const {t} = useTranslation();
+
+
     return(
         <>
             <ContactDiv>
                 <ContactTitle>
-                    How to reach me?
+                    {t("contact_title")}
                 </ContactTitle>
 
                 <ContactRequest>
-                    Please feel free to reach out to me via text message (514-898-9425) or DM me on <span><Insta href="https://www.instagram.com/studiowickmtl" target="_blank">Instagram</Insta></span>.
+                    {t("contact_info")} <span><Insta href="https://www.instagram.com/studiowickmtl" target="_blank">{t("contact_instagram")}</Insta></span>
                 </ContactRequest>
 
                 <ContactInformation>
                     <ContactForm ref={form} onSubmit={sendEmail}>
-                        <Name for="name">Name:</Name>
+                        <Name for="name">{t("contact_name")}</Name>
                         <NameInput type="text" name="from_name" id="name" required></NameInput>
-                        <Email for="email">Email:</Email>
+                        <Email for="email">{t("contact_email")}</Email>
                         <EmailInput type="email" name="from_email" id="email" required></EmailInput>
-                        <Subject for="subject">Subject:</Subject>
+                        <Subject for="subject">{t("contact_subject")}</Subject>
                         <SubjectInput type="text" name="subject" id="subject" required></SubjectInput>
-                        <Message for="message">Message:</Message>
+                        <Message for="message">{t("contact_message")}</Message>
                         <MessageInput type="text" name="message" id="message" required></MessageInput>
-                        <Submit type="submit">Submit</Submit>
+                        <Submit type="submit">{t("contact_submit")}</Submit>
                     </ContactForm>
                 </ContactInformation>
             </ContactDiv>
@@ -68,14 +77,14 @@ align-items: center;
 
 const ContactTitle = styled.h1`
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 400px) {
     text-align: center;
     font-size: 1.5rem;
   }
 `
 
 const ContactRequest = styled.p`
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 800px) {
     text-align: center;
     padding: 0rem 2rem;
   }
@@ -160,7 +169,7 @@ const EmailInput = styled.input`
 
 const Subject = styled.label`
 position: relative;
-left: -12.75rem;
+left: -13.25rem;
 
 @media only screen and (max-width: 750px) {
     left: -7.75rem;

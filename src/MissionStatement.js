@@ -2,10 +2,17 @@ import { styled } from "styled-components";
 import SteffPhoto from "./Assets/Steff4Update.jpg"
 import MediaQuery from 'react-responsive'
 import { Link } from "react-router-dom";
-import wave from "./Assets/green wavy.png"
+import { useTranslation } from "react-i18next"
+
+import i18n from "./i18n";
+
+
+
 
 
 const MissionStatement = () => {
+
+        const {t} = useTranslation();
 
     return(
         <>
@@ -13,13 +20,13 @@ const MissionStatement = () => {
             {/* <WaveDiv>
             <WaveImage src={wave}/><WaveImage src={wave}/><WaveImage src={wave}/><WaveImage src={wave}/><WaveImage src={wave}/><WaveImage src={wave}/><WaveImage src={wave}/><WaveImage src={wave}/><WaveImage src={wave}/>
             </WaveDiv> */}
-            <Statement>Redefining Beauty Standards</Statement>
+            <Statement>{t("mission_statement_title")}</Statement>
             <MidContentBlock>
                     <MissionText>
                         {/* <MissionTitle>Who are we?</MissionTitle>
                         <MissionStatementText>At StudioWick, we are dedicated to redefining beauty standards and fostering inclusivity. We believe in a world where haircuts have no gender, where strong women are celebrated, and where every individual feels safe, confident, and comfortable in their own skin. Our mission is to empower and uplift, creating a space where authenticity thrives, and self-expression knows no bounds.</MissionStatementText> */}
-                        <MissionTitle>Where self-expression knows no bounds.</MissionTitle>
-                        <MissionButton to="/about">Learn More</MissionButton>
+                        <MissionTitle>{t("mission_statement_phrase")}</MissionTitle>
+                        <MissionButton to="/about">{t("mission_statement_button")}</MissionButton>
                     </MissionText>
                 <MediaQuery minWidth={300}>
                     <MissionPhoto>

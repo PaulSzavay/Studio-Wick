@@ -2,8 +2,14 @@ import { styled } from "styled-components";
 import Steph1 from "./Assets/Steff2Update.jpg"
 import Steph2 from "./Assets/Steff1Update.jpg"
 import Steph3 from "./Assets/Steff3Update.jpg"
+import { useTranslation } from "react-i18next"
+
+import i18n from "./i18n";
+
 
 const About = () => {
+
+    const {t} = useTranslation();
 
     return(
         <>
@@ -11,7 +17,7 @@ const About = () => {
         <Box>
         <Section>
         <AboutDescriptionMission>
-        At StudioWick, we are dedicated to redefining beauty standards and fostering inclusivity. We believe in a world where haircuts have no gender, where strong women are celebrated, and where every individual feels safe, confident, and comfortable in their own skin. Our mission is to empower and uplift, creating a space where authenticity thrives, and self-expression knows no bounds.
+        {t("about_mission_statement")}
         </AboutDescriptionMission>
         </Section>
             <Section>
@@ -19,15 +25,15 @@ const About = () => {
             <WickPhoto src={Steph1}/>
             </PhotoDiv>
             <AboutText>
-                <AboutTitle>Who is Steff?</AboutTitle>
-                <AboutDescription>Steff's lifelong dream was to pursue a career as a hairstylist. After completing her studies at Algonquin College, she dedicated the first six years of her professional life to refining her skills in Ottawa. In 2021, she made the decision to return to her hometown of Montreal. Finally, in 2023, she realized her dream by opening StudioWick. Specializing in precision cutting, Steff takes great pride in her work. Her true passion lies in creating beautiful highlights and transformative color treatments.</AboutDescription>
+                <AboutTitle>{t("about_title1")}</AboutTitle>
+                <AboutDescription>{t("about_section1")}</AboutDescription>
             </AboutText>
             </Section>
 
             <Section2>
             <AboutText>
-                <AboutTitle>What makes Steff different?</AboutTitle>
-                <AboutDescription>Steff is driven by a desire to challenge society's beauty standards and cultivate an environment where people feel comfortable without the pressure of conforming to a specific image. Her philosophy revolves around attentive listening to her clients and providing thoughtful input that harmonizes with their individual preferences.</AboutDescription>
+                <AboutTitle>{t("about_title2")}</AboutTitle>
+                <AboutDescription>{t("about_section2")}</AboutDescription>
             </AboutText>
             <PhotoDiv>
             <WickPhoto src={Steph2}/>
@@ -39,8 +45,8 @@ const About = () => {
             <WickPhoto src={Steph3}/>
             </PhotoDiv>
             <AboutText>
-                <AboutTitle>Steff's Goal</AboutTitle>
-                <AboutDescription>At StudioWick, clients are welcomed into a safe and inclusive space where they are encouraged to express their true selves. Steff is committed to actively listening, empathizing, and helping clients achieve their hair aspirations. Her goal is to cultivate an atmosphere that promotes comfort and a sense of belonging for everyone who walks through the door.</AboutDescription>
+                <AboutTitle>{t("about_title3")}</AboutTitle>
+                <AboutDescription>{t("about_section3")}</AboutDescription>
             </AboutText>
             </Section>
             </Box>

@@ -3,23 +3,30 @@ import { Link } from "react-router-dom";
 import Placeholder from "./Assets/Wick1.jpg"
 import Shampoo from "./Assets/Wick2.jpg"
 import MissionStatement from "./MissionStatement";
+import { useTranslation } from "react-i18next"
+
+import i18n from "./i18n";
+
 
 
 
 
 const Homepage = () => {
 
+
+    const {t} = useTranslation();
+
     return(
         <>
         <CoverImageDiv>
                 <Book>
-                    <BookButton className="button" href="https://www.fresha.com/a/studio-wick-montreal-montreal-1165-rue-ottawa-iga8musl" target="_blank">Book Now</BookButton>
+                    <BookButton className="button" href="https://www.fresha.com/a/studio-wick-montreal-montreal-1165-rue-ottawa-iga8musl" target="_blank">{t("book")}</BookButton>
                     <a href="https://www.fresha.com/a/studio-wick-montreal-montreal-1165-rue-ottawa-iga8musl" target="_blank">
                     <BookImage src={Shampoo}></BookImage>
                     </a>
                 </Book>
                 <AboutMe>
-                    <AboutMeButton className="button2" to="/about">About</AboutMeButton>
+                    <AboutMeButton className="button2" to="/about">{t("about")}</AboutMeButton>
                     <Link to="/about">
                     <AboutMeImage src={Placeholder}></AboutMeImage>
                     </Link>

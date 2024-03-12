@@ -8,15 +8,24 @@ import Contact from './Contact';
 import Services from './Services';
 import ScrollToTop from './ScrollToTop';
 import { Analytics } from '@vercel/analytics/react'
+import { useState } from 'react';
 
 const App = () => {
+
+  const [language, setLanguage] = useState("EN")
+
+  const changeLanguage = () => {
+    setLanguage((lang) => (lang === "EN" ? "FR" : "EN"))
+  }
+
+
   return (
     <>
     <GlobalStyles/>
     <Router>
       <ScrollToTop />
       <Header />
-      <Routes>
+      <Routes >
         <Route path="/" element={<Homepage/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/contact" element={<Contact/>}/>

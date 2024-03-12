@@ -5,8 +5,18 @@ import { CiLocationOn } from "react-icons/ci";
 import { FaTiktok } from "react-icons/fa";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { FiPhone } from "react-icons/fi";
+import { useTranslation } from "react-i18next"
+
+import i18n from "./i18n";
+
+
+
 
 const Footer = () => {
+
+
+  const {t} = useTranslation();
+
   return (
     <>
       <FooterDiv>
@@ -45,7 +55,7 @@ const Footer = () => {
           <RightInfo>
             <Follow>
               <FollowDiv>
-                <p>Follow Us:</p>
+                <p>{t("footer_follow")}</p>
                 <Circle>
                   <p>
                     <ReactIcons
@@ -69,9 +79,9 @@ const Footer = () => {
               </FollowDiv>
             </Follow>
             <Policies>
-              <p>©2023, Studio Wick All Rights Reserved</p>
+              <p>{t("footer_rights")}</p>
               <p>
-                Website by:{" "}
+                {t("footer_website")}:{" "}
                 <Designer
                   href="https://www.linkedin.com/in/paulszavay/"
                   target="_blank"
